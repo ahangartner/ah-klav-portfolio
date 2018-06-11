@@ -20,6 +20,7 @@ body {
 
 h1 {
   font-size: 30px;
+  text-align: center;
 }
 
 h2 {
@@ -30,24 +31,19 @@ h3 {
   font-size: 18px;
 }
 
-/* Spacing */
-div {
-  padding: 8px;
-  margin: 16px;
-}
-
 /* Link Styles */
 a {
   color: #35B0AB;
   text-decoration: none;
 }
 
-a:hover, a:focus {
-  text-decoration: underline;
-}
-
+/* not often used
 a:visited {
   color: #91979F;
+} */
+
+a:hover, a:focus {
+  text-decoration: underline;
 }
 
 a:active {
@@ -82,4 +78,71 @@ button:focus {
   cursor: pointer;
   background-color: #FEC73C;
   opacity: 0.8;
+}
+
+/* Layout Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.column-4 {
+  width: 24%;
+  display: inline-block;
+  margin-right: 1%;
+  float: left;
+  text-align: center;
+}
+
+.column-4:last-child {
+margin-right: 0;
+}
+
+.preview-img {
+  max-width: 90%
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header {
+  padding: 16px 8px 48px 8px;
+}
+
+.logo {
+  float: left;
+
+
+/* Responsive */
+
+@media all and (max-width: 500px) {
+  .logo {
+    height: 50px;
+  }
+  h1 {
+    font-size:24px;
+    text-align: left;
+  }
+  .column-4 {
+    width: 49%;
+    margin-right: 1%;
+  }
+  .colunm-4:nth-child(2) {
+    margin-right: 0;
+  }
 }
