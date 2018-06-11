@@ -11,6 +11,26 @@ Fonts used
 Body Text: Open Sans Condensed (300,300i,700)
 */
 
+/* Responsive */
+
+@media all and (max-width: 500px) {
+  .logo {
+    height: 50px;
+  }
+  h1 {
+    font-size:24px;
+    text-align: left;
+  }
+  .column-4 {
+    width: 49%;
+    margin-right: 1%;
+  }
+  .colunm-4:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+
 /* Text Styles */
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -126,23 +146,3 @@ margin-right: 0;
 
 .logo {
   float: left;
-
-
-/* Responsive */
-
-@media all and (max-width: 500px) {
-  .logo {
-    height: 50px;
-  }
-  h1 {
-    font-size:24px;
-    text-align: left;
-  }
-  .column-4 {
-    width: 49%;
-    margin-right: 1%;
-  }
-  .colunm-4:nth-child(2) {
-    margin-right: 0;
-  }
-}
