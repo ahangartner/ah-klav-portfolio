@@ -21,7 +21,9 @@ body {
 
 h1 {
   font-size: 30px;
+  color: #373F47;
   text-align: center;
+  padding-bottom: 24px;
 }
 
 h2 {
@@ -30,6 +32,10 @@ h2 {
 
 h3 {
   font-size: 18px;
+}
+
+h4 {
+  text-align: center;
 }
 
 /* Link Styles */
@@ -122,12 +128,25 @@ margin-right: 0;
 }
 
 .header {
-  padding: 16px 8px 48px 8px;
+  padding: 8px 24px 64px 24px;
+  background-color: #373F47;
+  margin-bottom: 32px;
 }
 
 .logo {
   float: left;
 }
+
+.contact-details{
+  text-align: center;
+  margin: auto;
+}
+
+.about-details{
+  max-width: 700px;
+  margin: auto;
+}
+
 
 /* Responsive */
 
@@ -151,6 +170,7 @@ margin-right: 0;
 @media all and (max-width: 575px) {
   .logo {
     height: 40px;
+    margin-top: 5px;
   }
   h1 {
     font-size:24px;
