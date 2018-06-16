@@ -58,7 +58,8 @@ a:active {
 }
 
 /* Elements */
-button {
+button,
+.button {
   border: none;
   font-family: inherit;
   background-color: #FEC73C;
@@ -70,6 +71,7 @@ button {
 }
 
 button:hover,
+.button:hover,
 button:focus {
   cursor: pointer;
   opacity: 0.8;
@@ -147,6 +149,35 @@ margin-right: 0;
   margin: auto;
 }
 
+/* Animations */
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 32s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
+}
 
 /* Responsive */
 
