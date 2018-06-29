@@ -159,6 +159,7 @@ margin-right: 0;
 
 .grayscale {
   filter: grayscale(100%);
+  opacity: 75%;
 }
 
 /* Animations */
